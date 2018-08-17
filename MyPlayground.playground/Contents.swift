@@ -2,17 +2,21 @@
 
 import UIKit
 
-var a = 10
-var b = a
-b = 5
-a
+let valor1:String
+var valor2:Int
 
-let c = UILabel(frame: CGRect(x:0, y:0, width: 90, height: 100))
-c.text = "Etiqueta"
-c.text
 
-let d = c
-d.text = "Label"
-d.text
-c.text
+valor2 = 20
 
+let valor3:String = "Test2"
+
+if valor2 > 10 {
+    valor1 = "Test"
+}
+
+print(valor2)
+
+typealias entero = UInt32
+
+var valor:entero
+entero.max
