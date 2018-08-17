@@ -2,21 +2,57 @@
 
 import UIKit
 
-let valor1:String
-var valor2:Int
+let a = 2
+let b = 3
+let c = 5
+let d = 0.6
+let e = 2.3
 
+a + b
+b - a
+c * a
+a / b
+d / e
 
-valor2 = 20
+Double(a) / e
+a % b
 
-let valor3:String = "Test2"
+var f = 2
+f += 2
+f -= 2
+f *= 2
+f /= 2
+f %= 2
 
-if valor2 > 10 {
-    valor1 = "Test"
-}
+let g = 2
+let h = -3
+let i = -g
+let j = -h
 
-print(valor2)
+a == b
+a != b
+a <= b
+a >= b
+a < b
+a > b
 
-typealias entero = UInt32
+let x = a == b
 
-var valor:entero
-entero.max
+let uilabelc = UILabel(frame: CGRect(x: 0, y:0, width: 90, height: 100))
+uilabelc.text = "Etiqueta"
+
+let duilabel = uilabelc
+duilabel.text = "Label"
+
+let y = duilabel === uilabelc
+
+let ta = 2
+let tb = -3
+
+let tc = 5
+let td = 6.5
+let te = 3
+
+ta == tb ? tc: te
+ta < tb ? "ta es menor" : "tb es menor"
+
