@@ -2,14 +2,9 @@
 
 import UIKit
 
-var numero = 10
-var otro_numero = 20
-var cadena = "Swift"
+var contador = 0
 
-print (numero)
-print (otro_numero)
-print (numero, otro_numero, cadena)
-print (cadena)
-
-print("\(cadena) es un \(numero)")
-print("Le damos un \(numero) a \(cadena)")
+for i in 1...10 {
+    contador += i
+    print("contador : \(contador)")
+}
