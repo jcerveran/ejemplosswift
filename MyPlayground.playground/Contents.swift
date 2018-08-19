@@ -2,16 +2,16 @@
 
 import Foundation
 
-var valor:Int = -1
+var a: Int?
+let b = 10
 
-let acierto = Int(arc4random()) % 20
-print("Buscando el número \(acierto)")
+a != nil ? a! : b
 
-while acierto != valor{
-    valor = Int(arc4random()) % 20
-    if acierto != valor{
-        print("No he acertado, ha salido el número \(valor)")
-    }
-}
-print("Enhorabuena. Salió el \(valor)")
+let firmaDefecto: String = "Enviado desde mi iPhone"
+
+var firmaPersonalizada: String?
+var firma = firmaPersonalizada ?? firmaDefecto
+firmaPersonalizada = "Enviado desde iOS"
+
+var firmaOK = firmaPersonalizada ?? firmaDefecto
 
