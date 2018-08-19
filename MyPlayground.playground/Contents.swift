@@ -2,23 +2,42 @@
 
 import Foundation
 
-let cadena1 = "Una cadena"
-let cadena2 = "Otra cadena"
-let caracter1:Character = "A"
-let caracter2 = "B"
+var compositores = [String]()
+compositores.reserveCapacity(20)
+compositores.capacity
+compositores.count
 
-let valor1 = 20.3
-let fecha = Date()
-let cadena = "El valor es \(valor1) y la fecha es \(fecha)"
+compositores.append("Daddy Yankee")
+compositores.append("Ozuna")
+compositores.append("Maluma Baby")
+compositores.append("Arcangel")
+compositores.append("Leonardo Dantes")
+compositores.append("Izal")
+compositores.append("El kranko")
+compositores.append("Mala Rodriguez")
 
-let valor2 = 10.1
-let cadenaSuma = "La suma es \(valor1 + valor2)"
+compositores.count
 
-var inicio = "Érase una vez, en un pais lejano, un joven principe que vivía en un resplandeciente castillo"
+guard let index = compositores.index(of: "Izal") else{
+    print("No existe compositor en el array")
+    throw NSError(domain:"ERROR", code:0, userInfo: nil)
+}
+print ("\(compositores[index]), existe en el índice \(index)")
 
-inicio.contains("lejano")
-inicio.range(of: "un ")
+for compositor in compositores{
+    print("Música compuesta por \(compositor)")
+}
 
-if let rango = inicio.range(of: "pais"){
-    print(inicio.substring(with: rango))
+for (indice, compositor) in compositores.enumerated(){
+    print("Posición \(indice): " + compositor)
+}
+
+print("Sin orden \(compositores)")
+print("Ordenados externamente:  \(compositores.sorted())")
+
+print("Sin orden \(compositores)")
+//compositores.sort()
+
+for (indice, compositor) in compositores.enumerated(){
+    print("Posicion \(indice): " + compositor)
 }
